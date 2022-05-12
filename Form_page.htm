@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>forms</title>
+		<style>
+		body {background-color:#68A7AD; font-family:calibri;}
+		form {width:50%;
+		margin:auto;
+		}
+		fieldset{background-color:#99C4C8;
+		border-radius:25px;
+		}
+		
+		legend {font-family:arial;
+		font-weight:bold;
+		font-size:24;
+		background-color:#FEFBE7;
+		}
+		
+		
+		label{display:block;
+		width:50%;
+		float:left;
+		text-align:right;
+		margin-right:10px;}
+		
+		input [type-text]{display:block; width:200px; margin-bottom:5px;}
+		
+		
+	
+		
+		
+		</style>
+	</head>
+	<body>
+		<form action="form_handler.php" method="post">
+		<fieldset>
+			<legend><h2>What do you think?</h2></legend>
+			
+			<label for="fname"> First Name:</label>
+			<input type="text" name="fname" id="fname">
+			<br />
+				<label for="lname"> Last Name:</label>
+			<input type="text" name="lname" id="lname">
+			<br />
+				<label for="email"> What is your email address:</label>
+			<input type="text" name="email" id="email">
+			<br />
+			
+
+			<label for="para">Type a paragraph:</label>
+			<textarea name="para" id="para" rows="5" cols="45">Default text</textarea>
+			<br />
+			
+			<button type="button" name="click" id="click" 
+			onclick="alert('Thank you for your opinion..')">Done!</button>
+				
+			<br />
+			
+			</fieldset>
+		</form>
+	
+	
+		<main>
+		
+		
+		</main>
+	</body>
+</html>		
